@@ -1,0 +1,1092 @@
+/* Global box-sizing reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* General Body Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('background.webp') center/cover no-repeat fixed;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+/* Header */
+ /* header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 15px 50px;
+    background: #000;
+    color: #fff;
+}  */
+
+
+header .logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* nav a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 14px;
+} */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  /* logo left, nav right */
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0;
+    padding: 8px 12px;
+}
+
+nav a:hover {
+    text-decoration: underline; /* hover feedback */
+}
+
+.btn {
+    background: #ff4c4c;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.btn:hover {
+    background-color: #e33e3e;
+}
+
+/* About Section */
+.about-features {
+    background-color: rgba(0, 0, 0, 0.85);
+    max-width: 900px;
+    margin: auto;
+    padding: 40px;
+}
+
+/* Tables */
+table {
+    border-collapse: collapse;
+    margin: 20px auto;
+    color: #fff;
+    background-color: #000;
+}
+
+table th,
+table td {
+    border: 1px solid orange;
+    padding: 10px 15px;
+    text-align: left;
+}
+
+table th {
+    background-color: #111;
+    color: #fff;
+}
+
+table tr:hover {
+    background-color: #222;
+    color: orange;
+}
+
+.hero {
+        background: url('Hero\ Image.webp') center/cover no-repeat;
+        flex-direction: column;
+        display: flex;
+        text-align: left;
+        padding: 80px 20px;
+        justify-content: flex-start;
+}
+.hero-content {
+    text-align: inherit;
+    color: white;
+}
+.hero-content .btn{
+    display: block;
+    width: fit-content;
+    margin: 20px 0 0;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    border-radius: 8px;
+    display: block;
+}
+
+/* FAQ Section */
+.faq-section {
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    max-width: 800px;
+    margin: auto;
+}
+
+.faq-section h2 {
+    text-align: center;
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    margin-bottom: 20px;
+}
+
+.faq {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #444;
+}
+
+.faq-question {
+    background: none;
+    border: none;
+    color: #ffcc00;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: left;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.faq-question:hover {
+    background: rgba(255, 204, 0, 0.1);
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.conclusion p {
+  margin: 0;
+  font-size: clamp(0.98rem, 2.4vw, 1.05rem);
+  line-height: 1.6;
+  color: #d7dfe6;
+}
+
+.system-reqs {
+    width: 100%;
+    max-width: 800px;
+    border-collapse: collapse;
+    background-color:#000;
+    border: 2px solid orange; /* Table ka outer border */
+}
+
+.system-reqs th {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 12px;
+    font-size: clamp(1rem, 2vw, 1.3rem);
+}
+
+.system-reqs td {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: clamp(6px, 1.5vw, 12px);
+    color: #fff;
+    text-align: center;
+}
+
+.system-reqs tr:nth-child(even) td {
+    background-color: #111;
+}
+.system-reqs td:hover,
+.system-reqs th:hover {
+    color: orange;
+    transition: color 0.3s ease;
+    border: 1px solid orange; /* Inner cell borders */
+}
+
+.table-container {
+    overflow-x: auto;
+}
+.pros-cons {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #000;
+    color: #fff;
+    border: 2px solid orange;
+    table-layout: fixed;
+}
+
+.pros-cons th, .pros-cons td {
+    border: 1px solid orange;
+    padding: 10px;
+    text-align: center;
+}
+
+.pros-cons th {
+    background-color: #111;
+    font-weight: bold;
+    text-align: center;
+}
+
+.pros-cons tr:hover td {
+    color: orange !important;
+}
+
+.general-info-table {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: black;
+    color: white;
+    border: 2px solid orange;
+}
+
+.general-info-table th,
+.general-info-table td {
+  padding: 10px 15px;
+  text-align: left;
+  border: 1px solid orange;
+  transition: color 0.3s ease;
+  white-space: nowrap;
+  text-align: center;
+}
+
+/* Link Styling */
+.general-info-table a {
+  color: white;
+  text-decoration: none;
+}
+
+.general-info-table a:hover {
+  color: orange;
+}
+
+/* Hover Effect for Rows */
+.general-info-table tr:hover td,
+.general-info-table tr:hover th {
+  color: orange;
+}
+
+h1:hover,
+h2:hover,
+h3:hover,
+h4:hover,
+h5:hover,
+h6:hover {
+  color: #ff6600; /* orange color */
+  cursor: pointer; /* optional, gives clickable feel */
+}
+
+.comparison-table {
+  max-width: 800px; /* content width limit */
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: #000;
+  color: white;
+  border: 2px solid orange;
+  width: 100%;
+}
+
+.comparison-table th, 
+.comparison-table td {
+  border: 1px solid orange;
+  padding: 12px 15px;
+  text-align: center;
+}
+
+.comparison-table th {
+  background-color: #111;
+  color: white;
+  font-size: 18px;
+}
+
+.comparison-table tr:hover td {
+  color: orange; /* hover effect for full row */
+}
+
+.comparison-table th:hover{
+    color: orange;
+}
+
+h1 { font-size: clamp(1.5rem, 5vw, 2.5rem); }
+h2 { font-size: clamp(1.25rem, 4vw, 2rem); }
+h3 { font-size: clamp(1rem, 3.5vw, 1.5rem); }
+
+/* Highlight current page link */
+nav a[aria-current="page"] {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-weight: 600;
+}
+
+/* Subtle text halo for readability on busy images */
+.hero .hero-content h1,
+.hero .hero-content p {
+  text-shadow: 0 1px 2px rgba(0,0,0,.45);
+}
+
+/* Responsive media */
+img, svg, video {
+  max-width: 100%;
+  height: auto;
+}
+
+.comparison-table tr:hover a,
+.general-info-table tr:hover a,
+.system-reqs tr:hover a,
+.pros-cons tr:hover a { text-decoration: underline; }
+
+/* ------------------- Mobile Responsiveness ------------------- */
+
+/* Tablet view */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px 20px;
+        text-align: center;
+    }
+
+    .about-features,
+    .faq-section {
+        padding: 25px 20px;
+        margin-bottom: 25px;
+    }
+
+    nav {
+        margin-top: 10px;
+        justify-content: center;  /* center links */
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px;
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding: 50px 20px;
+        min-height: 350px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+        max-width: 100%;
+    }
+    .hero-content p{
+        font-size: 1.2rem;
+        margin-bottom: 25px;
+    }
+    .pros-cons th,
+    .pros-cons td,
+    .general-info-table th,
+    .general-info-table td,
+    .system-reqs th,
+    .system-reqs td,
+    .comparison-table th,
+    .comparison-table td {
+        font-size: 0.9rem;  /* Slightly smaller for fit */
+        padding: 8px 10px;
+    }
+
+    .btn{
+        background: #ff4c4c;
+        color: #fff;
+        padding: 12px 25px;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: bold;
+        display: inline-block;
+    }
+    .btn:hover{
+        background-color: #e33e3e;
+    }
+    
+
+    /*Mobile Adjutments*/
+
+    .hero{
+        padding: 60px 15px;
+        background-position: center top;
+    }
+    .hero-content h1{
+        font-size: 2rem;
+    }
+    .hero-content p{
+        font-size: 1rem;
+    }
+    .btn{
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    .faq-section {
+        padding: 15px;
+        margin: 20px;
+    }
+
+    .faq-section h2 {
+        font-size: 22px;
+    }
+
+    .faq-question {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .faq-answer {
+        font-size: 15px;
+        padding: 0 12px 12px;
+    }
+    .pros-cons,
+    .general-info-table,
+    .system-reqs,
+    .comparison-table {
+        width: 100%;           /* Fit within mobile screen */
+        max-width: 100%;    
+    }
+    /* Tablet: wrap table text so it doesn't overflow */
+    .general-info-table th, .general-info-table td,
+    .system-reqs th, .system-reqs td,
+    .pros-cons th, .pros-cons td,
+    .comparison-table th, .comparison-table td {
+        white-space: normal;
+        word-break: break-word;
+    }
+
+} 
+
+@media (max-width: 480px) {
+    body { background-attachment: scroll; }
+        /* Header */
+    header {
+        flex-direction: column;
+        padding: 10px 20px;
+        text-align: center;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    nav a {
+        font-size: 15px;
+        margin: 5px 0;
+    }
+
+    /* Hero Section */
+    .hero {
+        padding: 30px 15px;
+        flex-direction: column;
+        text-align: center; 
+        align-items: center;
+        background-size: cover;       /* Ensures image covers the area */
+        background-position: center;  /* Centers image */
+        background-repeat: no-repeat; /* Prevents tiling */
+        min-height: 350px;             /* Keeps enough height for image visibility */
+    }
+
+    .hero-content h1 {
+        font-size: 22px;
+        line-height: 1.3;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .btn,
+    .hero-content .btn {
+        display: inline-block;
+        min-height: 44px;
+        min-width: 44px;
+        padding: 10px 20px;
+        text-align: center;
+        font-size: 0.95rem;
+    }
+
+    /* Pros & Cons Table */
+    /* .pros-cons,
+    .general-info-table,
+    .system-reqs,
+    .comparison-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    } */
+
+    /* Mobile: wrap table cell text to avoid horizontal scroll */
+    .general-info-table th, .general-info-table td,
+    .system-reqs th, .system-reqs td,
+    .pros-cons th, .pros-cons td,
+    .comparison-table th, .comparison-table td {
+        white-space: normal;
+        word-break: break-word;
+    }
+
+
+    /* Table adjustments for mobile */
+    .pros-cons th,
+    .pros-cons td,
+    .general-info-table th,
+    .general-info-table td,
+    .system-reqs th,
+    .system-reqs td,
+    .comparison-table th,
+    .comparison-table td {
+        font-size: 0.85rem;    /* Slightly smaller text */
+        padding: 6px;          /* Less padding for better fit */
+    }
+
+    .pros-cons,
+    .general-info-table,
+    .system-reqs,
+    .comparison-table {
+        width: 100%;           /* Fit within mobile screen */
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footer-col h4 {
+        font-size: 16px;
+    }
+    .faq-section {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .faq-section h2 {
+        font-size: 20px;
+    }
+
+    .faq-question {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    .faq-answer {
+        font-size: 14px;
+        padding: 0 10px 10px;
+    }
+
+    /* Better section spacing for mobile */
+    .about-features,
+    .faq-section,
+    .conclusion,
+    .footer-container {
+        padding: 20px 15px;   /* Even spacing inside sections */
+        margin-bottom: 20px;  /* Extra space between sections */
+    }
+
+    .about-features h2,
+    .faq-section h2 {
+        margin-bottom: 15px;  /* Space below headings */
+    }
+
+    p {
+        margin-bottom: 15px;  /* Space between paragraphs */
+    }
+
+    nav a, .btn, button, .faq-question {
+    min-height: 44px;       /* ensures tall-enough target */
+    padding: 10px 14px;     /* extra touch-friendly padding */
+  }
+
+}
+/* Accessibility focus styles */
+a:focus-visible,
+.btn:focus-visible,
+.faq-question:focus-visible {
+  outline: 2px solid orange;
+  outline-offset: 2px;
+}
+
+/* Accessibility: respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Print-friendly overrides */
+@media print {
+  nav, .hero, .site-footer {
+    display: none !important;  /* hide navigation, banner, footer */
+  }
+  body {
+    background: #fff !important;
+    color: #000 !important;
+  }
+  table {
+    font-size: 12px;
+    border-color: #999;
+  }
+}
+
+/* Desktop only: subtle zebra striping for better table readability */
+@media (min-width: 769px) {
+  .comparison-table tbody tr:nth-child(odd),
+  .general-info-table tbody tr:nth-child(odd),
+  .system-reqs tbody tr:nth-child(odd),
+  .pros-cons tbody tr:nth-child(odd) {
+    background: rgba(255, 255, 255, 0.03); /* very light contrast */
+  }
+}
+
+/* ===== TOP-LEFT LOGO: HARD OVERRIDES ===== */
+.site-header{
+  position: fixed; top:0; left:0; right:0;
+  display:flex; align-items:center; gap:16px;
+  padding:8px 16px; background:black; z-index:3000;
+}
+
+/* Kill any global <img> rules that stretch inside headers */
+.site-header img{
+  max-width:none !important; width:auto !important;
+  height:auto !important; transform:none !important; filter:none !important;
+}
+
+/* Absolute target selector for the logo image */
+#siteLogo{
+  height:90px !important;          /* ← adjust 56–96px as you like */
+  width:auto !important;
+  display:block !important;
+  object-fit:contain !important;
+  margin-left: 20px !important;
+}
+
+/* Keep logo box tight */
+.site-header .logo{ flex:0 0 auto; line-height:0; }
+
+/* Nav (optional) pushes to right */
+.site-header nav{ margin-left:auto; display:flex; gap:16px; align-items:center; }
+
+/* Phone: slightly smaller logo */
+@media (max-width:480px){
+  #siteLogo{ height:56px !important; }
+}
+
+/* Footer styling */
+.site-footer {
+  background: black;      
+  color:white;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Logo + brand block */
+.footer-logo-block {
+  display: flex;
+  align-items: center;              
+  gap: 10px;
+}
+
+.footer-brand h3 {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+/* Paragraph text */
+.footer-text {
+  font-size: 14px;
+  line-height: 1.5;
+  max-width: 500px;         /* text ki width limit */
+  margin: 20px auto;
+}
+
+/* Footer container */
+.site-footer {
+  background: #000;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Footer column container */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;  /* space between columns */
+  margin: 0 auto;
+  max-width: 1100px;
+  padding-left: 120px;
+}
+
+/* Footer columns */
+.footer-col {
+  flex: 1;
+  min-width: 250px;   /* Prevent columns from shrinking too small */
+  text-align: left;   /* Left-align text within the columns */
+  margin-bottom: 20px; /* Space between footer items */
+}
+
+/* Logo column */
+.footer-logo {
+  height: 100px;   /* logo size adjust */
+  width: auto;
+  margin-bottom: 10px;
+}
+
+/* Footer column headings */
+.footer-col h4 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Footer links */
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-col a:hover {
+  color: orange;
+}
+
+/* Copyright text at the bottom */
+.footer-bottom {
+  text-align: center;
+  font-size: 14px;
+  padding-top: 20px;
+  color: #ccc;
+}
+
+/* Footer responsive adjustments */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;  /* Center the columns on small screens */
+  }
+
+  .footer-col {
+    text-align: center;  /* Center text inside each column */
+  }
+}
+
+/* Centered page width same as home */
+.page-container{
+  max-width: 900px;     /* same cap we used for footer */
+  margin: 120px auto 0;  /* 120px top = fixed header ka space */
+  padding: 60px 20px;       /* side breathing */
+  background: rgba(0,0,0,0.9);
+}
+
+/* If your header height differs, tune this */
+@media (max-width: 480px){
+  .page-container{ margin-top: 90px; }
+}
+
+/* Smooth scroll + fixed header offset */
+html{ scroll-behavior:smooth; }
+h2[id], h3[id]{ scroll-margin-top:120px; }
+
+/* ===== Table of Contents (Sticky Sidebar Style) ===== */
+/* .toc {
+  position: sticky;
+  top: 100px;  /* distance from top of viewport */
+  /* background: black;
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin: 20px 0;
+  width: 280px;
+  max-height: 80vh;
+  overflow-y: auto;
+  z-index: 2000;
+  color: goldenrod;
+} */
+
+/* ToC toggle button (useful on mobile) */
+/* .toc-toggle {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+} */
+
+/* Main ToC list */
+/* .toc-list {
+  list-style: none;
+  padding-left: 12px;
+  margin-top: 10px;
+  display: block; /* controlled via JS toggle */
+  /* max-height: 80vh;
+  overflow-y: auto;
+}
+.toc-list > li {
+  margin: 6px 0;
+} */ 
+
+/* H2 buttons with children */
+/* .toc-h2 {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 600;
+  padding: 0;
+}
+.has-children > .toc-h2::after {
+  content: " ▸";
+  opacity: 0.8;
+}
+.has-children.open > .toc-h2::after {
+  content: " ▾";
+} */
+
+/* Nested H3 list */
+/* .toc-sub {
+  list-style: disc;
+  margin: 6px 0 0 16px;
+  display: none;
+}
+.has-children.open > .toc-sub {
+  display: block;
+}
+
+.toc a {
+  color: #fff;
+  text-decoration: none;
+}
+.toc a:hover {
+  text-decoration: underline;
+} */
+
+/* ===== Mobile Adjustments ===== */
+/* @media (max-width: 768px) {
+  .toc {
+    position: relative;
+    top: auto;
+    width: 100%;
+    max-height: none;
+    overflow-y: visible;
+    margin-bottom: 20px;
+  }
+  .toc-list {
+    display: none; /* ✅ Hide only on mobile */
+  /* }
+}  */
+
+
+.shot {
+  margin: 16px auto;
+  text-align: center;
+  max-width: 1024px; /* keep it from stretching too much on big monitors */
+}
+
+.shot img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,.15);
+}
+
+.shot figcaption {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+:root{
+  --bg:#0b0d12; --panel:#121622; --panel-2:#0e1320;
+  --text:#e7ecf4; --muted:#a6b3c5; --accent:#ffd54a; --pill:#21293a;
+  --radius:16px;
+}
+.news-wrap{max-width:1200px;margin:auto;padding:28px 16px;color:var(--text)}
+.news-header{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:16px}
+.news-header h2{font-size:clamp(22px,3.2vw,32px);font-weight:800}
+.news-header h2 span{color:var(--accent)}
+.tabs{display:flex;gap:8px;background:var(--panel-2);padding:6px;border-radius:999px}
+.tab{appearance:none;border:0;background:transparent;color:var(--muted);
+     padding:8px 14px;border-radius:999px;cursor:pointer;font-weight:700}
+.tab.is-active{background:var(--accent);color:#1b1b1b}
+.tab:hover{color:#fff}
+
+.news-grid{
+  display:grid; gap:18px;
+  grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width: 1024px){ .news-grid{grid-template-columns: repeat(2,1fr);} }
+@media (max-width: 640px){ .news-grid{grid-template-columns: 1fr;} }
+
+.card{background:var(--panel);border-radius:var(--radius);overflow:hidden;
+      box-shadow:0 10px 22px rgba(0,0,0,.35);transition:transform .18s ease, box-shadow .18s ease}
+.card:hover{transform:translateY(-3px);box-shadow:0 14px 28px rgba(0,0,0,.45)}
+.card a{color:inherit;text-decoration:none;display:block;height:100%}
+
+.thumb{position:relative;aspect-ratio: 16/9;overflow:hidden}
+.thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.thumb::after{/* subtle gradient for legibility */
+  content:"";position:absolute;inset:0;background:
+  linear-gradient(180deg, rgba(0,0,0,.0) 55%, rgba(0,0,0,.55) 100%);
+}
+.badge{
+  position:absolute;left:10px;bottom:10px;z-index:2;
+  background:var(--pill);color:var(--muted);padding:6px 10px;
+  border-radius:10px;font-size:.85rem;backdrop-filter: blur(6px);
+}
+
+.card-body{padding:14px}
+.card-body h3{font-size:1.05rem;line-height:1.35;margin:0 0 2px}
+.card-body p{color:var(--muted);font-size:.95rem;margin:.35rem 0 0}
+
+.toc-block {
+  background: black;
+  border: 2px solid orange;
+  border-radius: 16px;
+  padding: 24px 32px;
+  max-width: 1000px;
+  margin: 40px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+.toc-header h2,
+.toc-h2,
+.toc-list a {
+  color: white;                   /* Ensure all text is white */
+}
+
+.toc-toggle-btn {
+  background: orange;            /* Orange toggle button */
+  color: black;                  /* Black icon/text */
+}
+
+.toc-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.toc-header h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.toc-toggle-btn {
+  background: #222;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.toc-list {
+  list-style-type: disc;
+  padding-left: 24px;
+  transition: max-height 0.3s ease;
+}
+
+.toc-list li {
+  margin-bottom: 6px;
+}
+
+.toc-list ul {
+  list-style-type: circle;
+  margin-left: 20px;
+}
+
+.toc-h2 {
+  background: none;
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  padding: 6px 0;
+}
+
+.toc-sub {
+  display: none;
+  padding-left: 20px;
+}
+
+.has-children.open > .toc-sub {
+  display: block;
+}
+
+.feature-image-wrapper {
+  max-width: 800px;     /* Match your content width */
+  margin: 0 auto;        /* Center horizontally */
+  background-color: #000;
+  border: 2px solid orange;
+  padding: 20px;         /* Optional spacing */
+  text-align: center;    /* Center the image itself */
+}
+
+.feature-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;   /* Optional: rounded edges */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* Optional: subtle shadow */
+}
+
+
+
+
+
+
+
+
+
+
+
