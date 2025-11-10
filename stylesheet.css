@@ -1080,6 +1080,45 @@ h2[id], h3[id]{ scroll-margin-top:120px; }
   box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* Optional: subtle shadow */
 }
 
+/* ====== MOBILE HEADER & FOOTER FIXES (drop in) ====== */
+
+/* 1) Reserve space for the fixed header so content doesn't slip under it */
+:root { --header-h: 100px; }        /* default desktop header height */
+body { padding-top: var(--header-h); }
+
+/* 2) Let the header wrap neatly on small screens */
+.site-header { flex-wrap: wrap; }
+
+/* 3) Tame the logo size earlier (tablet and below) */
+@media (max-width: 768px) {
+  :root { --header-h: 72px; }       /* shorter header on tablets */
+  #siteLogo { height: 64px !important; } /* was 90px (desktop) */
+}
+
+/* Keep the existing 480px logo rule but ensure header offset matches */
+@media (max-width: 480px) {
+  :root { --header-h: 64px; }
+  /* you already have: #siteLogo { height:56px !important; } */
+}
+
+/* 4) If you aren't using a JS toggle yet, hide the stray hamburger to avoid clutter */
+.menu-toggle { display: none; }
+
+/* 5) Footer: remove the hard left padding that causes horizontal drift on small screens */
+@media (max-width: 1024px) {
+  .footer-container { padding-left: 0; }
+}
+
+/* 6) Footer: relax column min-width on the smallest phones */
+@media (max-width: 480px) {
+  .footer-col { min-width: 200px; } /* was 250px; prevents overflow on tiny widths */
+}
+
+/* 7) Optional polish: ensure nav can wrap without overlapping anything */
+@media (max-width: 768px) {
+  nav { flex-wrap: wrap; row-gap: 8px; }
+}
+
 
 
 
