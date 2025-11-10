@@ -681,7 +681,7 @@ a:focus-visible,
 
 /* Absolute target selector for the logo image */
 #siteLogo{
-  height:90px !important;          /* ← adjust 56–96px as you like */
+  height:70px !important;          /* ← adjust 56–96px as you like */
   width:auto !important;
   display:block !important;
   object-fit:contain !important;
