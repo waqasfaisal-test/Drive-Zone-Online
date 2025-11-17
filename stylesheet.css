@@ -1119,6 +1119,74 @@ body { padding-top: var(--header-h); }
   nav { flex-wrap: wrap; row-gap: 8px; }
 }
 
+/* ============================
+   MOBILE MENU (max-width: 768px)
+   ============================ */
+
+@media (max-width: 768px) {
+
+  /* Hide the nav on mobile */
+  #primaryNav {
+    display: none;
+    position: absolute;
+    top: 100%;           /* Directly under header */
+    left: 0;
+    right: 0;
+    background: #111;    /* Match your theme */
+    padding: 15px;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 9999;
+  }
+
+  /* When JS adds .is-open to header → show menu */
+  .site-header.is-open #primaryNav {
+    display: flex;
+  }
+
+  /* Show the hamburger icon on mobile */
+  .menu-toggle {
+    display: block;
+    font-size: 28px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: white;
+    margin-left: auto;   /* push to right side */
+  }
+
+  /* Make nav links stack vertically */
+  #primaryNav a {
+    display: block;
+    width: 100%;
+    padding: 12px 10px;
+    color: white;
+  }
+
+  /* Ensure header is flexible and neat */
+  .site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  /* Hide desktop nav layout (inline links) */
+  .site-header nav {
+    flex-direction: column;
+  }
+}
+
+/* ============================
+   SMALL PHONES (max-width: 480px)
+   ============================ */
+@media (max-width: 480px) {
+  #primaryNav a {
+    padding: 14px 12px;
+  }
+}
+
+
 
 
 
