@@ -1122,6 +1122,11 @@ body { padding-top: var(--header-h); }
 /* ============================
    MOBILE MENU (max-width: 768px)
    ============================ */
+.menu-toggle {
+  display: none;
+}
+
+
 
 @media (max-width: 768px) {
 
@@ -1163,12 +1168,17 @@ body { padding-top: var(--header-h); }
     color: white;
   }
 
+  #primaryNav ul { list-style: none; margin: 0; padding: 0; }
+  #primaryNav li { margin: 0; }
+  #primaryNav a { display:block; }
+
+
   /* Ensure header is flexible and neat */
   .site-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative;
+    position: fixed;
   }
 
   /* Hide desktop nav layout (inline links) */

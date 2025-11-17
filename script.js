@@ -5,9 +5,6 @@ document.querySelectorAll('.faq-question').forEach(button => {
     });
   });
 
-//   document.getElementById("menuToggle").addEventListener("click", function() {
-//     document.getElementById("navMenu").classList.toggle("active");
-// });
 
 // Mobile menu toggle for header
 const header = document.querySelector('.site-header');
@@ -21,6 +18,7 @@ if (header && menuToggle) {
     menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
   });
 }
+
 
 
 // Dropdown ToC: open/close whole box
