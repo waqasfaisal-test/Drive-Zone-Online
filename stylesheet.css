@@ -1168,10 +1168,7 @@ body { padding-top: var(--header-h); }
     color: white;
   }
 
-  #primaryNav ul { list-style: none; margin: 0; padding: 0; }
-  #primaryNav li { margin: 0; }
-  #primaryNav a { display:block; }
-
+  
 
   /* Ensure header is flexible and neat */
   .site-header {
