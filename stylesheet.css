@@ -1178,7 +1178,7 @@ body { padding-top: var(--header-h); }
     position: fixed;
   }
   .site-header {
-    padding: 8px 12px;
+    padding: 4px 8px;
   }
   /* Hide desktop nav layout (inline links) */
   .site-header nav {
