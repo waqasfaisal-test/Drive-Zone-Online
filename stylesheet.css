@@ -681,7 +681,7 @@ a:focus-visible,
 
 /* Absolute target selector for the logo image */
 #siteLogo{
-  height:70px !important;          /* ← adjust 56–96px as you like */
+  height:55px !important;          /* ← adjust 56–96px as you like */
   width:auto !important;
   display:block !important;
   object-fit:contain !important;
@@ -1177,7 +1177,9 @@ body { padding-top: var(--header-h); }
     justify-content: space-between;
     position: fixed;
   }
-
+  .site-header {
+    padding: 8px 12px;
+  }
   /* Hide desktop nav layout (inline links) */
   .site-header nav {
     flex-direction: column;
