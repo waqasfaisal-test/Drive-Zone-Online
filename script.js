@@ -5,9 +5,22 @@ document.querySelectorAll('.faq-question').forEach(button => {
     });
   });
 
-  document.getElementById("menuToggle").addEventListener("click", function() {
-    document.getElementById("navMenu").classList.toggle("active");
-});
+//   document.getElementById("menuToggle").addEventListener("click", function() {
+//     document.getElementById("navMenu").classList.toggle("active");
+// });
+
+// Mobile menu toggle for header
+const header = document.querySelector('.site-header');
+const menuToggle = document.getElementById('menuToggle');
+
+if (header && menuToggle) {
+  menuToggle.addEventListener('click', () => {
+    header.classList.toggle('is-open');
+
+    const isOpen = header.classList.contains('is-open');
+    menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+}
 
 
 // Dropdown ToC: open/close whole box
