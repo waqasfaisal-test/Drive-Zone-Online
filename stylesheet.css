@@ -1210,74 +1210,9 @@ body { padding-top: var(--header-h); }
 
 .site-header {
     padding: 5px 10px 0px 10px !important;
+    border-bottom: 3px solid orange;
 }
 
-
-/* ===== FINAL HEADER OVERRIDE - paste at THE VERY END of stylesheet.css ===== */
-
-/* Target final compact header height and force it to win over previous rules */
-:root { --final-header-h: 56px; }              /* change 56px if you want taller/shorter */
-body { padding-top: var(--final-header-h) !important; }
-
-/* Final header box (fixed) */
-.site-header {
-  position: fixed !important;
-  top: 0 !important;
-  left: 0 !important;
-  right: 0 !important;
-  height: var(--final-header-h) !important;
-  padding: 0 12px !important;                 /* no extra vertical padding */
-  display: flex !important;
-  align-items: center !important;             /* vertical center */
-  justify-content: center !important;         /* center logo visually */
-  background: #000 !important;
-  z-index: 9999 !important;
-  gap: 8px !important;
-  overflow: visible !important;
-}
-
-/* Logo sizing and centering */
-#siteLogo {
-  height: calc(var(--final-header-h) - 16px) !important;  /* logo slightly smaller than header */
-  width: auto !important;
-  margin: 0 auto !important;                             /* keep centered */
-  display: block !important;
-  object-fit: contain !important;
-}
-
-/* Hamburger pinned at right without pushing logo */
-.menu-toggle {
-  position: absolute !important;
-  right: 12px !important;
-  top: 50% !important;
-  transform: translateY(-50%) !important;
-  display: block !important;
-  background: none !important;
-  border: none !important;
-  color: #fff !important;
-  font-size: 26px !important;
-  padding: 6px !important;
-  z-index: 10001 !important;
-  line-height: 1 !important;
-}
-
-/* Ensure nav dropdown sits directly under header */
-#primaryNav {
-  top: var(--final-header-h) !important;
-}
-
-/* If you use a .page-container offset for content, sync it */
-.page-container, main, .content {
-  margin-top: calc(var(--final-header-h) + 8px) !important;
-}
-
-/* Small phones: slightly smaller header & logo */
-@media (max-width: 480px) {
-  :root { --final-header-h: 52px; }               /* slightly smaller on tiny phones */
-  #siteLogo { height: calc(var(--final-header-h) - 12px) !important; }
-  .menu-toggle { font-size: 24px !important; right: 10px !important; }
-  #primaryNav { top: var(--final-header-h) !important; }
-}
 
 
 
