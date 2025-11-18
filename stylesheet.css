@@ -698,7 +698,7 @@ a:focus-visible,
 
 /* Phone: slightly smaller logo */
 @media (max-width:480px){
-  #siteLogo{ height:56px !important; }
+  #siteLogo{ height: 40px !important; }
 }
 
 /* Footer styling */
