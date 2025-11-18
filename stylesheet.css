@@ -1210,7 +1210,7 @@ body { padding-top: var(--header-h); }
 
 .site-header {
     padding: 5px 10px 0px 10px !important;
-    border-bottom: 3px solid orange;
+    border-bottom: 6px solid orange;
 }
 
 
