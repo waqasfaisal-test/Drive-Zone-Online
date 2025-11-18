@@ -39,11 +39,24 @@ header .logo {
 .site-header {
     display: flex;
     align-items: center;
-    justify-content: space-between;  /* logo left, nav right */
+    justify-content: center;  /* logo left, nav right */
     position: fixed;
-    padding: 5px 12px 0px 12px;
+    padding: 6px 12px 2px 12px;
+    width: 100%;
 }
 
+/* Put the hamburger at the far right while main content stays centered */
+  .menu-toggle {
+    position: absolute;
+    right: 12px;
+    top: 8px;
+    display: block;
+  }
+
+  /* Make nav center under logo when visible on mobile */
+  .site-header nav {
+    margin: 0;
+  }
 nav {
     display: flex;
     gap: 20px;
@@ -687,14 +700,14 @@ a:focus-visible,
   width:auto !important;
   display:block !important;
   object-fit:contain !important;
-  margin-left: 20px !important;
+  margin-left: 0 !important;
 }
 
 /* Keep logo box tight */
 .site-header .logo{ flex:0 0 auto; line-height:0; }
 
 /* Nav (optional) pushes to right */
-.site-header nav{ margin-left:auto; display:flex; gap:16px; align-items:center; }
+.site-header nav{ margin-left:0; display:flex; gap: 12px; align-items:center; }
 
 /* Phone: slightly smaller logo */
 @media (max-width:480px){
