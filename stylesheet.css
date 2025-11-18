@@ -36,10 +36,12 @@ header .logo {
     font-size: 14px;
 } */
 
-header {
+.site-header {
     display: flex;
     align-items: center;
     justify-content: space-between;  /* logo left, nav right */
+    position: fixed;
+    padding: 5px 12px 0px 12px;
 }
 
 nav {
@@ -1083,7 +1085,7 @@ h2[id], h3[id]{ scroll-margin-top:120px; }
 /* ====== MOBILE HEADER & FOOTER FIXES (drop in) ====== */
 
 /* 1) Reserve space for the fixed header so content doesn't slip under it */
-:root { --header-h: 100px; }        /* default desktop header height */
+:root { --header-h: 64px; }        /* default desktop header height */
 body { padding-top: var(--header-h); }
 
 /* 2) Let the header wrap neatly on small screens */
@@ -1091,14 +1093,14 @@ body { padding-top: var(--header-h); }
 
 /* 3) Tame the logo size earlier (tablet and below) */
 @media (max-width: 768px) {
-  :root { --header-h: 72px; }       /* shorter header on tablets */
-  #siteLogo { height: 64px !important; } /* was 90px (desktop) */
+  :root { --header-h: 64px; }       /* shorter header on tablets */
+  #siteLogo { height: 48px !important; } /* was 90px (desktop) */
 }
 
 /* Keep the existing 480px logo rule but ensure header offset matches */
 @media (max-width: 480px) {
-  :root { --header-h: 64px; }
-  /* you already have: #siteLogo { height:56px !important; } */
+  :root { --header-h: 56px; }
+  #siteLogo { height: 40px !important; }
 }
 
 /* 4) If you aren't using a JS toggle yet, hide the stray hamburger to avoid clutter */
@@ -1176,8 +1178,6 @@ body { padding-top: var(--header-h); }
     align-items: center;
     justify-content: space-between;
     position: fixed;
-  }
-  .site-header {
     padding: 5px 12px 0px 12px;
   }
   /* Hide desktop nav layout (inline links) */
