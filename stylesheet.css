@@ -227,7 +227,7 @@ table tr:hover {
 }
 .system-reqs td,
 .system-reqs th {
-    color: orange;
+    /* color: orange; */
     border: 1px solid orange;  
 } 
 
