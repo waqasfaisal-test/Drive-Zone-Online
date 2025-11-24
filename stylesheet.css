@@ -229,7 +229,7 @@ table tr:hover {
 .system-reqs th:hover {
     color: orange;
     transition: color 0.3s ease;
-    border: 1px solid orange; /* Inner cell borders */
+    border: 1px solid orange; /* Inner cell borders 
 } */
 
 .table-container {
