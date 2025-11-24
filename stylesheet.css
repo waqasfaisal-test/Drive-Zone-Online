@@ -231,6 +231,10 @@ table tr:hover {
     border: 1px solid orange;  
 } 
 
+.system-reqs tr:hover{
+  color: orange;
+}
+
 .table-container {
     overflow-x: auto;
 }
