@@ -225,12 +225,11 @@ table tr:hover {
 .system-reqs tr:nth-child(even) td {
     background-color: #111;
 }
-/* .system-reqs td:hover,
-.system-reqs th:hover {
+.system-reqs td,
+.system-reqs th {
     color: orange;
-    transition: color 0.3s ease;
-    border: 1px solid orange; /* Inner cell borders 
-} */
+    border: 1px solid orange;  
+} 
 
 .table-container {
     overflow-x: auto;
